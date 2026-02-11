@@ -1,0 +1,27 @@
+- name: Raj Kumar
+  dob: 10-05-1995
+  Mob: 8608908493
+  Addresses:
+    - Door No: 52
+      Street: Bashyakaralu Street
+      city: Chennai
+      Type: Perm
+      
+    - Door No: 2/7
+      Street: Thulasingam Street
+      city: Chennai
+      Type: Current
+
+- name: Vignan Thota
+  dob: 04-05-1994
+  Mob: 8801212011
+  Addresses:
+    - Door No: 52
+      Street: Bashyakaralu Street
+      city: Chennai
+      Type: Perm
+      
+    - Door No: 2/7
+      Street: Thulasingam Street
+      city: Chennai
+      Type: Current
