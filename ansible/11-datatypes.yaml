@@ -1,0 +1,23 @@
+- name: demo on date types
+  hosts: local
+  connection: local
+  vars:
+    PROGRAM: "AWS with Devops"
+    DURATION: 140
+    IS_LIVE: true
+    DETAILS:
+      MONTHS: 4
+      TRAINER: "Siva Kumar Reddy"
+    TOPICS:
+      - Linux
+      - Shell
+      - Ansible
+  tasks:
+    name: print variable
+    ansible.builtin.debug:
+      msg: |
+        progam: {{ PROGRAM }} 
+        Duration: {{ DURATION }}
+        Is Live?: {{ IS_LIVE}}
+        Details: {{ DETAILS }}
+        Topics: {{ TOPICS }}
