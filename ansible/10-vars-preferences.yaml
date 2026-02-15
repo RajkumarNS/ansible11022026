@@ -4,14 +4,14 @@
   vars:
     NAME: "Ansible from PLAY"
   vars_files:
-    -course.yaml
+  - course.yaml
   vars_prompt:
   - name: NAME
     prompt: Please enter name
     private: false
   tasks:
-    - name: print name
-      vars:
-        NAME: "Ansible from TASKS"
-      ansible.builtin.debug:
-        msg: "Hi {{ Name }}"
+  - name: print name
+    vars:
+      NAME: "Ansible from TASKS"
+    ansible.builtin.debug:
+      msg: "Hi {{ Name }}"
