@@ -8,23 +8,21 @@
       project: roboshop
       component: catalogue  
 
-    tagslist:
-    [
-        {
-            "key": "name",
-            "value": "ansible"
-        },
-        {
-            "key": "project",
-            "value": "roboshop"
-        },
-        {
-            "key": "component",
-            "value": "catalogue"
-        }
-    ]
- 
-  
+    tagslist:  [
+              {
+                  "key": "name",
+                  "value": "ansible"
+              },
+              {
+                  "key": "project",
+                  "value": "roboshop"
+              },
+              {
+                  "key": "component",
+                  "value": "catalogue"
+              }
+          ]
+
   tasks:
   - name: greeting
     ansible.builtin.debug:
