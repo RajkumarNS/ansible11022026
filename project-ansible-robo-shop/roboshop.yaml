@@ -23,6 +23,7 @@
         Name: "{{ item }}-{{env}}"
     loop: "{{ instances }}"
     register: ec2_output
+    when: action == create
 
   - name: print the output
     ansible.builtin.debug:
@@ -38,6 +39,8 @@
       value: "{{ item.instances[0].private_ip_address }}"
       wait: true
     loop: "{{ ec2_output.results }}"
-    when: item.item == "frontend"
+    when: 
+    - item.item == "frontend"
+    - action == "create"
 
 
